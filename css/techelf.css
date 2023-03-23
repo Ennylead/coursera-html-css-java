@@ -3,16 +3,65 @@ body{font-size: 16px;
      background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
 }
-header
     #header-nav{
         background-color: #f6b319 ; 
         border-radius: 0; 
-        border: 0;
+        border: 0; 
     }
 #logo-img{
     background: url('../gfg.png') no-repeat;
     width: 156px;
     height: 81px;
     margin: 10px 15px 10px 0;
+
 }
-.pull{float: left;}
+@media (max-width:700px) {
+    #logo-img {
+      transition: none; display: none;
+    }
+}
+
+.bb{float: left;
+}
+
+.icon-bar {float: left;
+}
+.navbar-brand{
+    padding-top: 25px;
+}
+.navbar-brand h1{
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    
+}
+.navbar-brand a:link{
+    text-decoration: none;
+}
+.navbar-brand p{
+    font-family: 'Lora', serif, bold; 
+    color: #000;
+    text-transform:uppercase;
+    font-size: .40em;
+    margin-top: 6px;
+    text: bold ;
+    
+}
+.navbar-brand p span{
+    vertical-align: middle;
+}
+
+.navbar-toggler {position: relative;
+    float: right;
+}
+    @media (min-width:700px) {
+        .navbar-toggler {
+          transition: none; display: none;
+        }
+    }
